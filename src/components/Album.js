@@ -47,11 +47,11 @@ class Album extends Component {
     }
    }
 
-   hoverOn(index) {
-    this.setState({ hover: true });
+   hoverOn(song) {
+    this.setState({ hover: song });
    }
 
-   hoverOff(index) {
+   hoverOff(song) {
     this.setState({ hover: false });
    }
 
@@ -78,11 +78,12 @@ class Album extends Component {
               this.state.album.songs.map((song, index) =>
               <tr className="song" key={index} 
                 onClick={() => this.handleSongClick(song)} 
-                onMouseEnter={() => this.hoverOn[index]} 
-                onMouseLeave={() => this.hoverOff[index]}>
+                onMouseEnter={() => this.hoverOn(song)} 
+                onMouseLeave={() => this.hoverOff(song)}>
 
                 {
-               this.state.isPlaying && this.state.currentSong === song ? ( <span className="ion-md-pause-circle"></span> )
+                  this.state.isPlaying === song ? ( <span className="ion-md-pause-circle"></span> )
+                : this.state.hover === song ? ( <span className="ion-md-play-circle"></span>)
                 : this.state.currentSong === song ? ( <span className="ion-md-play-circle"></span> )
                 : (<td className="song-number">{index + 1}</td>)
                 }
