@@ -100,8 +100,8 @@ class Album extends Component {
                 onMouseLeave={() => this.hoverOff(song)}>
 
                 {
-                  this.state.isPlaying && this.state.currentSong === song ? ( <span className="ion-md-pause"></span> )
-                : this.state.hover === song ? ( <span className="ion-md-play"></span>)
+                  this.state.isPlaying && this.state.currentSong === song ? ( <td><span className="ion-md-pause"></span></td> )
+                : this.state.hover === song ? ( <td><span className="ion-md-play"></span></td>)
                 : (<td className="song-number">{index + 1}</td>)
                 }
 
