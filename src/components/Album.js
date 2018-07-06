@@ -97,13 +97,16 @@ class Album extends Component {
     this.setState({ volume: newVolume });
    }
 
-   formatTime(e) {
-    const mins = (e / 60);
-    if (mins === undefined) {
-      return "-:--";
+   formatTime(t) {
+    const mins = Math.floor(t / 60);
+    const secs = parseInt((t % 60), 10);
+    if (secs < 10) {
+      return "0:0" + secs;
     }
-    else {
-      return mins;
+    else if (t === undefined) {
+      return "-:--";
+    } else {
+      return mins + ":" + secs;
     }
    }
 
@@ -150,7 +153,7 @@ class Album extends Component {
                 }
 
                 <td className="song-title">{song.title}</td>
-                <td className="song-duration">{song.duration}</td>
+                <td className="song-duration">{this.formatTime(song.duration)}</td>
               </tr>
               )
              }
@@ -166,7 +169,7 @@ class Album extends Component {
            handleNextClick={() => this.handleNextClick()}
            handleTimeChange={(e) => this.handleTimeChange(e)}
            handleVolumeChange={(e) => this.handleVolumeChange(e)}
-           formatTime={(e) => this.formatTime(e)}
+           formatTime={(t) => this.formatTime(t)}
 
          />
 			</section>
