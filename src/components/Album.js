@@ -91,6 +91,23 @@ class Album extends Component {
     this.setState({ currentTime: newTime });
    }
 
+   handleVolumeChange(e) {
+    const newVolume = e.target.value;
+    this.audioElement.volume = newVolume;
+    this.setState({ volume: newVolume });
+   }
+
+   formatTime(e) {
+    const mins = (e / 60);
+    if (mins === undefined) {
+      return "-:--";
+    }
+    else {
+      return mins;
+    }
+   }
+
+
    hoverOn(song) {
     this.setState({ hover: song });
    }
@@ -148,6 +165,9 @@ class Album extends Component {
            handlePrevClick={() => this.handlePrevClick()}
            handleNextClick={() => this.handleNextClick()}
            handleTimeChange={(e) => this.handleTimeChange(e)}
+           handleVolumeChange={(e) => this.handleVolumeChange(e)}
+           formatTime={(e) => this.formatTime(e)}
+
          />
 			</section>
 			);
