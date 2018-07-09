@@ -1,8 +1,5 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
+/*.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
@@ -26,3 +23,123 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+*/
+
+
+/*entire App start here*/
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*nav bar for all pages*/
+.nav-bar {
+  max-height: 200px;
+  min-height: 80px;
+  max-width: 100%;
+  min-width: 900px;
+  display: block;
+  background-color: #862727;
+  background: linear-gradient(#d06464, #862727);
+}
+
+.logo {
+  font-family: chalkduster;
+  color: white;
+  padding-left: 5%;
+  float: left;
+  display: inline-block;
+  }
+
+  .logo-link {
+    text-decoration: none;
+    color: white;
+  }
+
+.home-link {
+  float: right;
+  margin-right: 5%;
+  padding-top: 31px;
+  text-decoration: none;
+  color: white;
+}
+
+.library-link {
+  float: right;
+  padding-right: 10px;
+  padding-top: 31px;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/*begin landing page here*/
+
+/*bottom bar*/
+
+/*landing*/
+.landing {
+  background-color: #862727;
+  max-width: 100%;
+  min-width: 900px;
+  height: auto;
+  position: relative;
+}
+
+/*landing image*/
+.landing-image {
+  max-width: 100%;
+  min-width: 900px;
+  height: auto;
+  min-height: 600px;
+  opacity: .5;
+  position: relative;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 9vmax;
+  white-space: nowrap;
+}
+
+.selling-points {
+  display: flex;
+  min-width: 900px;
+}
+
+.point1, .point2, .point3 {
+  display: inline-block;
+  width: 33.33%;
+  max-height: 400px;
+  background-color: #70E8E0;
+  background: linear-gradient(#70E8E0, #2F6864);
+}
+
+
+
+/*start library here*/
+
+/*background*/
+.entire-library {
+  background-color: #862727;
+  min-width: 900px;
+}
+
+/*library img*/
+.library-img {
+  max-width: 100%;
+  height: auto;
+  min-height: 600px;
+  opacity: .5;
+  position: relative;
+}
+
+
+
+
