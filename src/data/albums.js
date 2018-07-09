@@ -1,4 +1,6 @@
-export default [{
+export default [
+
+{
   title: 'The Colors',
   artist: 'Pablo Picasso',
   releaseInfo: '1909 Spanish Records',
@@ -24,4 +26,6 @@ export default [{
       { title: 'Pink', duration: '153.14', audioSrc: '/assets/music/pink.mp3' },
       { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
     ]
-}];
+},
+
+];
