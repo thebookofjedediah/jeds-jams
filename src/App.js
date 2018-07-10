@@ -12,7 +12,7 @@ class App extends Component {
 
         <nav className="nav-bar">
           <header>
-            <h1 className="logo"><Link to="/" className="logo-link">Bloc Jams</Link></h1>
+            <Link to="/"><img src="/assets/images/bloc-jams-logo.png" alt="bloc jams logo" className="logo"></img></Link>
           </header>
           <Link to='/' className="home-link" >Home</Link>
           <Link to='/library' className="library-link" >Library</Link>

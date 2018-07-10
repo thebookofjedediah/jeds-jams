@@ -45,11 +45,10 @@
 }
 
 .logo {
-  font-family: chalkduster;
-  color: white;
-  padding-left: 5%;
+  padding-left: 2%;
   float: left;
   display: inline-block;
+  height: 80px;
   }
 
   .logo-link {
