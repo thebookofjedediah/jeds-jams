@@ -9,13 +9,11 @@ class Library extends Component {
 	}
 	render() {
 		return (
-			<div className="entire-library">
-		      <img src="/assets/images/library_background.jpg" alt="smoke background" className="library-img"></img>
 			  
-			  <section className='album-list'>
+			  <section className='library'>
 			{
 				this.state.albums.map( (album, index) =>
-					<Link to={`/album/${album.slug}`} key={index}> 
+					<Link className="album-link" to={`/album/${album.slug}`} key={index}> 
 					  <img src={album.albumCover} alt={album.title} />
 					  <div>{album.title}</div>
 					  <div>{album.artist}</div>
@@ -24,7 +22,6 @@ class Library extends Component {
 				)
 			}
 			  </section>
-			</div>
 			);
 	}
 }

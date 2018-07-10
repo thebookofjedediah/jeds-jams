@@ -40,8 +40,8 @@
   max-width: 100%;
   min-width: 900px;
   display: block;
-  background-color: #862727;
-  background: linear-gradient(#d06464, #862727);
+  background-color: #36bbbb;
+  background: linear-gradient(#79bb36, #36bbbb);
 }
 
 .logo {
@@ -51,17 +51,18 @@
   height: 80px;
   }
 
-  .logo-link {
-    text-decoration: none;
-    color: white;
-  }
+.logo-link {
+  text-decoration: none;
+  color: white;
+}
 
 .home-link {
   float: right;
   margin-right: 5%;
   padding-top: 31px;
   text-decoration: none;
-  color: white;
+  color: #7936bb;
+  font-family: Gadget;
 }
 
 .library-link {
@@ -69,7 +70,8 @@
   padding-right: 10px;
   padding-top: 31px;
   text-decoration: none;
-  color: white;
+  color: #7936bb;
+  font-family: Gadget;
 }
 
 
@@ -80,7 +82,8 @@
 
 /*landing*/
 .landing {
-  background-color: #862727;
+  background-color: #bb7936;
+  background: linear-gradient(#36bbbb, #4fa1a1, #36bbbb);
   max-width: 100%;
   min-width: 900px;
   height: auto;
@@ -99,44 +102,83 @@
 
 .hero-title {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #7936bb;
   font-size: 9vmax;
   white-space: nowrap;
+  font-family: Gadget;
+  text-shadow: 3px 3px black;
 }
 
 .selling-points {
   display: flex;
   min-width: 900px;
+  color: #7936bb;
 }
 
 .point1, .point2, .point3 {
   display: inline-block;
   width: 33.33%;
   max-height: 400px;
-  background-color: #70E8E0;
-  background: linear-gradient(#70E8E0, #2F6864);
+  background-color: #36bbbb;
+  background: linear-gradient(#36bbbb, #79bb36);
+}
+
+.point-title {
+  font-family: "Courier New";
+  font-size: 2vw;
+  font-variant: small-caps;
+}
+
+.point-description {
+  font-size: 1vw;
+  font-family: Courier;
 }
 
 
 
 /*start library here*/
 
-/*background*/
-.entire-library {
-  background-color: #862727;
-  min-width: 900px;
+.library {
+  background-color: #1f1e1e;
 }
 
-/*library img*/
-.library-img {
-  max-width: 100%;
-  height: auto;
-  min-height: 600px;
-  opacity: .5;
+
+.library img {
+  width: 20vw;
+}
+
+.library div {
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.library .album-title {
+  font-size: 1.25rem;
+}
+
+.library .album-artist,
+.library .album-song-count {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.album-link {
   position: relative;
+  display: inline-block;
+  margin: 2.5rem;
+  padding: 0.1rem;
+  text-align: center;
+  top: 0;
+  transition: top ease 0.2s;
+}
+
+.album-link:hover {
+  top: -10px;
+  transition: 0.2s;
 }
 
 
