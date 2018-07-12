@@ -31,6 +31,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  background: #1f1e1e;
 }
 
 /*nav bar for all pages*/
@@ -128,12 +129,12 @@
 
 .point-title {
   font-family: "Courier New";
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-variant: small-caps;
 }
 
 .point-description {
-  font-size: 1vw;
+  font-size: 1.25vw;
   font-family: Courier;
 }
 
@@ -141,28 +142,24 @@
 
 /*start library here*/
 
-.library {
-  background-color: #1f1e1e;
-}
-
 
 .library img {
   width: 20vw;
 }
 
 .library div {
-  font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
 }
 
 .library .album-title {
-  font-size: 1.25rem;
+  font-size: 2.2vw;
+  text-decoration: none;
 }
 
 .library .album-artist,
 .library .album-song-count {
-  font-size: 0.8rem;
+  font-size: 1.4vw;
   opacity: 0.7;
 }
 
@@ -172,14 +169,95 @@
   margin: 2.5rem;
   padding: 0.1rem;
   text-align: center;
+  text-decoration: none;
+  color: white;
   top: 0;
   transition: top ease 0.2s;
 }
 
 .album-link:hover {
-  top: -10px;
+  top: 10px;
+  opacity: .7;
   transition: 0.2s;
 }
+
+
+/*album page start here*/
+
+
+#song-list {
+  color: white;
+  width: 50%;
+  float: left;
+  padding-top: 6rem;
+}
+
+#song-list tr:hover {
+  opacity: .7;
+}
+
+#song-list td {
+  border-bottom: 1px solid white;
+  height: 30px;
+}
+
+.album-details {
+  color: white;
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+#album-cover-art {
+  padding: .1rem;
+  margin: 2.5rem;
+  width: 30%;
+  float: left;
+}
+
+
+/*player bar start here*/
+
+
+.player-bar {
+   position: absolute;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    background-color: #392c2c;
+    min-width: 900px;
+}
+
+
+#buttons, #time-control, #volume-control {
+  display: inline-block;
+  width: 33.3%;
+  position: center;
+  height: 30px;
+  padding-top: 15px;
+}
+
+#buttons {
+
+}
+
+.current-time, .total-time {
+  display: inline-block;
+  padding: 3px;
+}
+
+.ion-md-volume-low, .ion-md-volume-high {
+  display: inline-block;
+  padding: 3px;
+}
+
+
+
+
+
+
+
 
 
 
