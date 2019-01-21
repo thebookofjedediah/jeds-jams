@@ -1,31 +1,3 @@
-
-/*.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-*/
-
-
 /*entire App start here*/
 .App {
   text-align: center;
@@ -50,7 +22,7 @@
   float: left;
   display: inline-block;
   height: 80px;
-  }
+}
 
 .logo-link {
   text-decoration: none;
@@ -75,8 +47,6 @@
   font-family: Gadget;
 }
 
-
-
 /*begin landing page here*/
 
 /*bottom bar*/
@@ -97,7 +67,7 @@
   min-width: 900px;
   height: auto;
   min-height: 600px;
-  opacity: .5;
+  opacity: 0.5;
   position: relative;
 }
 
@@ -119,7 +89,9 @@
   color: #7936bb;
 }
 
-.point1, .point2, .point3 {
+.point1,
+.point2,
+.point3 {
   display: inline-block;
   width: 33.33%;
   max-height: 400px;
@@ -138,10 +110,7 @@
   font-family: Courier;
 }
 
-
-
 /*start library here*/
-
 
 .library img {
   width: 20vw;
@@ -177,13 +146,11 @@
 
 .album-link:hover {
   top: 10px;
-  opacity: .7;
+  opacity: 0.7;
   transition: 0.2s;
 }
 
-
 /*album page start here*/
-
 
 #song-list {
   color: white;
@@ -193,7 +160,7 @@
 }
 
 #song-list tr:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 #song-list td {
@@ -209,28 +176,27 @@
 }
 
 #album-cover-art {
-  padding: .1rem;
+  padding: 0.1rem;
   margin: 2.5rem;
   width: 30%;
   float: left;
 }
 
-
 /*player bar start here*/
 
-
 .player-bar {
-   position: absolute;
-    z-index: 100; 
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-    background-color: #7936bb;
-    min-width: 900px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #7936bb;
+  min-width: 900px;
 }
 
-
-#buttons, #time-control, #volume-control {
+#buttons,
+#time-control,
+#volume-control {
   display: inline-block;
   width: 33.3%;
   position: center;
@@ -243,24 +209,14 @@
   height: auto;
 }
 
-
-.current-time, .total-time {
+.current-time,
+.total-time {
   display: inline-block;
   padding: 3px;
 }
 
-.ion-md-volume-low, .ion-md-volume-high {
+.ion-md-volume-low,
+.ion-md-volume-high {
   display: inline-block;
   padding: 3px;
 }
-
-
-
-
-
-
-
-
-
-
-
